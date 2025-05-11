@@ -222,18 +222,35 @@
     <script>
       const images = [
         "https://github.com/drrakendu78/TradSC-docs/blob/main/public/capture-ecran-2025-05-11-171534.png?raw=true",
-        "https://github.com/drrakendu78/TradSC-docs/blob/main/public/Capture-d'%C3%A9cran-2025-05-11-170607.png?raw=true",
-        "https://github.com/drrakendu78/TradSC-docs/blob/main/public/Capture-ecran-2025-05-11%20222124.png?raw=true",
-        "https://github.com/drrakendu78/TradSC-docs/blob/main/public/Capture-ecran-2025-05-11%20222132.png?raw=true",
-        "https://github.com/drrakendu78/TradSC-docs/blob/main/public/Capture-ecran-2025-05-11%20222138.png?raw=true",
-        "https://github.com/drrakendu78/TradSC-docs/blob/main/public/Capture-ecran-2025-05-11%20222151.png?raw=true",
-        "https://github.com/drrakendu78/TradSC-docs/blob/main/public/Capture-ecran-2025-05-11%20222158.png?raw=true"
+        "https://github.com/drrakendu78/TradSC-docs/blob/main/public/Capture-ecran-2025-05-11-170607.png?raw=true",
+        "https://github.com/drrakendu78/TradSC-docs/blob/main/public/Capture-ecran-2025-05-11-222124.png?raw=true",
+        "https://github.com/drrakendu78/TradSC-docs/blob/main/public/Capture-ecran-2025-05-11-222132.png?raw=true",
+        "https://github.com/drrakendu78/TradSC-docs/blob/main/public/Capture-ecran-2025-05-11-222138.png?raw=true",
+        "https://github.com/drrakendu78/TradSC-docs/blob/main/public/Capture-ecran-2025-05-11-222151.png?raw=true",
+        "https://github.com/drrakendu78/TradSC-docs/blob/main/public/Capture-ecran-2025-05-11-222158.png?raw=true"
       ];
-      let current = 0;
-      setInterval(() => {
-        current = (current + 1) % images.length;
-        document.getElementById('hero-slideshow').src = images[current];
-      }, 3500);
+
+      let loadedImages = 0;
+      const preloaded = [];
+
+      images.forEach((src, i) => {
+        preloaded[i] = new Image();
+        preloaded[i].src = src;
+        preloaded[i].onload = () => {
+          loadedImages++;
+          if (loadedImages === images.length) {
+            startSlideshow();
+          }
+        };
+      });
+
+      function startSlideshow() {
+        let current = 0;
+        setInterval(() => {
+          document.getElementById('hero-slideshow').src = images[current];
+          current = (current + 1) % images.length;
+        }, 3500);
+      }
     </script>
     <script>
       const smartscreenImages = [
