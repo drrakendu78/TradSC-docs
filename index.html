@@ -44,6 +44,9 @@
             <h2 class="hero-title fade-in">Une application de bureau pour gérer les traductions françaises de Star Citizen</h2>
             <p class="hero-description fade-in">Construite avec Tauri et React, notre application vous permet de gérer facilement les traductions françaises pour une expérience de jeu immersive.</p>
             <div class="hero-buttons fade-in">
+              <a id="download-msi" class="btn btn-success" style="margin-right: 0.5em; background-color: #22c55e; border: none;">
+                Télécharger la dernière version (.msi)
+              </a>
               <a href="#installation" class="btn btn-primary">Installer l'application</a>
               <a href="#features" class="btn btn-secondary">Découvrir les fonctionnalités</a>
             </div>
@@ -228,6 +231,21 @@
         smartscreenCurrent = (smartscreenCurrent + 1) % smartscreenImages.length;
         document.getElementById('smartscreen-slideshow').src = smartscreenImages[smartscreenCurrent];
       }, 3500);
+    </script>
+    <script>
+    fetch('https://api.github.com/repos/drrakendu78/TradSC/releases/latest')
+      .then(response => response.json())
+      .then(data => {
+        const asset = data.assets.find(a => a.name.endsWith('_x64_fr-FR.msi'));
+        if (asset) {
+          document.getElementById('download-msi').href = asset.browser_download_url;
+          document.getElementById('download-msi').setAttribute('download', asset.name);
+        } else {
+          document.getElementById('download-msi').textContent = "Fichier .msi non trouvé";
+          document.getElementById('download-msi').classList.remove('btn-success');
+          document.getElementById('download-msi').style.backgroundColor = '#ccc';
+        }
+      });
     </script>
   </body>
 </html>

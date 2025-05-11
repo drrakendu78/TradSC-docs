@@ -327,6 +327,10 @@ button {
   fill: white;
 }
 
+.btn-success {
+  color: #fff !important;
+}
+
 /* Sections */
 .section-title {
   text-align: center;
