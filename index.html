@@ -49,7 +49,7 @@
                 Télécharger la dernière version (.msi)
               </a>
               <a href="#installation" class="btn btn-secondary btn-thin">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="margin-right:8px;"><path fill="currentColor" d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="margin-right:8px;"><path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 9h2v2H8V9zm0 3h8v2H8v-2zm0 3h8v2H8v-2z"/></svg>
                 Comment installer
               </a>
               <a href="#features" class="btn btn-secondary btn-thin">Découvrir les fonctionnalités</a>
@@ -221,36 +221,19 @@
     </div>
     <script>
       const images = [
-        "https://github.com/drrakendu78/TradSC-docs/blob/main/public/capture-ecran-2025-05-11-171534.png?raw=true",
-        "https://github.com/drrakendu78/TradSC-docs/blob/main/public/Capture-ecran-2025-05-11-170607.png?raw=true",
-        "https://github.com/drrakendu78/TradSC-docs/blob/main/public/Capture-ecran-2025-05-11-222124.png?raw=true",
-        "https://github.com/drrakendu78/TradSC-docs/blob/main/public/Capture-ecran-2025-05-11-222132.png?raw=true",
-        "https://github.com/drrakendu78/TradSC-docs/blob/main/public/Capture-ecran-2025-05-11-222138.png?raw=true",
-        "https://github.com/drrakendu78/TradSC-docs/blob/main/public/Capture-ecran-2025-05-11-222151.png?raw=true",
-        "https://github.com/drrakendu78/TradSC-docs/blob/main/public/Capture-ecran-2025-05-11-222158.png?raw=true"
+        "Capture-ecran-2025-05-11-170607.png",
+        "capture-ecran-2025-05-11-171534.png",
+        "Capture-ecran-2025-05-11-222124.png",
+        "Capture-ecran-2025-05-11-222132.png",
+        "Capture-ecran-2025-05-11-222138.png",
+        "Capture-ecran-2025-05-11-222151.png",
+        "Capture-ecran-2025-05-11-222158.png"
       ];
-
-      let loadedImages = 0;
-      const preloaded = [];
-
-      images.forEach((src, i) => {
-        preloaded[i] = new Image();
-        preloaded[i].src = src;
-        preloaded[i].onload = () => {
-          loadedImages++;
-          if (loadedImages === images.length) {
-            startSlideshow();
-          }
-        };
-      });
-
-      function startSlideshow() {
-        let current = 0;
-        setInterval(() => {
-          document.getElementById('hero-slideshow').src = images[current];
-          current = (current + 1) % images.length;
-        }, 3500);
-      }
+      let current = 0;
+      setInterval(() => {
+        current = (current + 1) % images.length;
+        document.getElementById('hero-slideshow').src = images[current];
+      }, 3500);
     </script>
     <script>
       const smartscreenImages = [
