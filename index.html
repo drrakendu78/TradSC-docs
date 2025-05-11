@@ -46,7 +46,7 @@
             </div>
           </div>
           <div class="hero-image fade-in">
-            <img src="https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Application screenshot" class="screenshot">
+            <img id="hero-slideshow" src="Capture d'écran 2025-05-11 171534.png" alt="Capture d'écran application" class="screenshot">
           </div>
         </div>
       </section>
@@ -108,7 +108,7 @@
                 <h3 class="step-title">Message de protection Windows</h3>
                 <p class="step-description">Si Windows affiche un message "Windows a protégé votre ordinateur", cliquez sur <strong>Informations complémentaires</strong> puis sur <strong>Exécuter quand même</strong>.</p>
                 <div class="image-container">
-                  <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="SmartScreen Exemple" class="step-image">
+                  <img id="smartscreen-slideshow" src="https://github.com/drrakendu78/TradSC/blob/main/Documentation/Assets/smartscreen_info.png?raw=true" alt="SmartScreen Exemple" class="step-image">
                 </div>
               </div>
             </div>
@@ -199,5 +199,27 @@
         </div>
       </footer>
     </div>
+    <script>
+      const images = [
+        "Capture d'écran 2025-05-11 171534.png",
+        "Capture d'écran 2025-05-11 170607.png"
+      ];
+      let current = 0;
+      setInterval(() => {
+        current = (current + 1) % images.length;
+        document.getElementById('hero-slideshow').src = images[current];
+      }, 3500);
+    </script>
+    <script>
+      const smartscreenImages = [
+        "https://github.com/drrakendu78/TradSC/blob/main/Documentation/Assets/smartscreen_info.png?raw=true",
+        "https://github.com/drrakendu78/TradSC/blob/main/Documentation/Assets/smartscreen_run.png?raw=true"
+      ];
+      let smartscreenCurrent = 0;
+      setInterval(() => {
+        smartscreenCurrent = (smartscreenCurrent + 1) % smartscreenImages.length;
+        document.getElementById('smartscreen-slideshow').src = smartscreenImages[smartscreenCurrent];
+      }, 3500);
+    </script>
   </body>
 </html>
