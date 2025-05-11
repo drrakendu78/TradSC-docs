@@ -257,11 +257,28 @@
         "https://github.com/drrakendu78/TradSC/blob/main/Documentation/Assets/smartscreen_info.png?raw=true",
         "https://github.com/drrakendu78/TradSC/blob/main/Documentation/Assets/smartscreen_run.png?raw=true"
       ];
-      let smartscreenCurrent = 0;
-      setInterval(() => {
-        smartscreenCurrent = (smartscreenCurrent + 1) % smartscreenImages.length;
-        document.getElementById('smartscreen-slideshow').src = smartscreenImages[smartscreenCurrent];
-      }, 3500);
+
+      let smartscreenLoadedImages = 0;
+      const smartscreenPreloaded = [];
+
+      smartscreenImages.forEach((src, i) => {
+        smartscreenPreloaded[i] = new Image();
+        smartscreenPreloaded[i].src = src;
+        smartscreenPreloaded[i].onload = () => {
+          smartscreenLoadedImages++;
+          if (smartscreenLoadedImages === smartscreenImages.length) {
+            startSmartscreenSlideshow();
+          }
+        };
+      });
+
+      function startSmartscreenSlideshow() {
+        let smartscreenCurrent = 0;
+        setInterval(() => {
+          smartscreenCurrent = (smartscreenCurrent + 1) % smartscreenImages.length;
+          document.getElementById('smartscreen-slideshow').src = smartscreenImages[smartscreenCurrent];
+        }, 3500);
+      }
     </script>
     <script>
     fetch('https://api.github.com/repos/drrakendu78/TradSC/releases/latest')
