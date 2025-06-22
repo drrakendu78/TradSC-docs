@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://github.com/drrakendu78/TradSC-docs/blob/main/public/16x16.png?raw=true">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://github.com/drrakendu78/TradSC-docs/blob/main/public/32x32.png?raw=true">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://github.com/drrakendu78/TradSC-docs/blob/main/public/48x48.png?raw=true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StarTrad FR</title>
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+    <script src="js/theme.js" defer></script>
+    <script src="js/animations.js"></script>
+    <link rel="stylesheet" crossorigin href="/TradSC-docs/assets/index-sT12VTn2.css">
+    <link rel="stylesheet" href="upscayl-theme.css">
+  </head>
+  <body class="light-theme">
+    <header class="header sticky">
+      <div class="container nav-flex">
+        <div class="logo">
+          <img src="icon.png" alt="Logo StarTrad FR, application de traduction française pour Star Citizen" class="logo-img">
+          <span class="logo-text">StarTrad FR <span class="highlight">Traduction Française de SC</span></span>
+        </div>
+        <nav class="nav" role="navigation" aria-label="Navigation principale">
+          <a href="#features" class="nav-link" aria-current="page">Fonctionnalités</a>
+          <a href="#installation" class="nav-link">Installation</a>
+          <a href="#contribution" class="nav-link">Contribution</a>
+          <a href="#support" class="nav-link">Support</a>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Changer le thème clair/sombre">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 7a7 7 0 0 0 12 4.9v.1c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2h.1A6.979 6.979 0 0 0 10 7zm-6 5a8 8 0 0 0 15.062 3.762A9 9 0 0 1 8.238 4.938 7.999 7.999 0 0 0 4 12z"/></svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-flex-col">
+          <div class="hero-image-avant">
+            <div class="hero-slideshow-mockup fade-in">
+              <img id="hero-slideshow" src="Capture-ecran-2025-05-11-170607.png" alt="Capture d'écran de l'application StarTrad FR en fonctionnement" class="screenshot">
+            </div>
+          </div>
+          <div class="hero-content-glass fade-in">
+            <h1 class="hero-title">Une application de bureau pour gérer les traductions françaises de Star Citizen</h1>
+            <p class="hero-description">Construite avec Tauri et React, notre application vous permet de gérer facilement les traductions françaises pour une expérience de jeu immersive.</p>
+            <div class="hero-buttons">
+              <a id="download-msi" class="btn btn-success btn-thin" style="margin-right: 0.5em; background-color: #c58422; border: none;">
+                <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" style="margin-right:10px;"><path fill="white" d="M5 20h14a1 1 0 0 0 0-2H5a1 1 0 0 0 0 2zm7-3a1 1 0 0 0 1-1v-5.59l1.3 1.3a1 1 0 1 0 1.4-1.42l-3-3a1 1 0 0 0-1.4 0l-3 3a1 1 0 1 0 1.4 1.42l1.3-1.3V16a1 1 0 0 0 1 1z"/></svg>
+                Télécharger la dernière version (.msi)
+              </a>
+              <a href="#installation" class="btn btn-secondary btn-thin">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="margin-right:8px;"><path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 9h2v2H8V9zm0 3h8v2H8v-2zm0 3h8v2H8v-2z"/></svg>
+                Comment installer
+              </a>
+              <a href="#features" class="btn btn-secondary btn-thin">Découvrir les fonctionnalités</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="container">
+          <h2 class="section-title">Fonctionnalités</h2>
+          <div class="features-grid">
+            <div class="feature-card slide-in-right" tabindex="0" aria-label="Gestion des traductions">
+              <div class="feature-icon">🌍</div>
+              <h3 class="feature-title">Gestion des traductions</h3>
+              <p class="feature-description">Gérez facilement les traductions françaises pour Star Citizen</p>
+            </div>
+            <div class="feature-card slide-in-right" tabindex="0" aria-label="Nettoyage du cache">
+              <div class="feature-icon">🧹</div>
+              <h3 class="feature-title">Nettoyage du cache</h3>
+              <p class="feature-description">Nettoyez le cache du jeu en un clic pour une expérience optimale</p>
+            </div>
+            <div class="feature-card slide-in-right" tabindex="0" aria-label="Interface personnalisable">
+              <div class="feature-icon">🎨</div>
+              <h3 class="feature-title">Interface personnalisable</h3>
+              <p class="feature-description">Interface utilisateur moderne et entièrement personnalisable</p>
+            </div>
+            <div class="feature-card slide-in-right" tabindex="0" aria-label="Mode sombre/clair">
+              <div class="feature-icon">🌓</div>
+              <h3 class="feature-title">Mode sombre/clair</h3>
+              <p class="feature-description">Choisissez entre le mode sombre ou clair selon votre préférence</p>
+            </div>
+            <div class="feature-card slide-in-right" tabindex="0" aria-label="Flux RSS d'actualités">
+              <div class="feature-icon">📰</div>
+              <h3 class="feature-title">Flux RSS d'actualités</h3>
+              <p class="feature-description">Restez informé avec le flux d'actualités intégré</p>
+            </div>
+            <div class="feature-card slide-in-right" tabindex="0" aria-label="Traductions disponibles">
+              <div class="feature-icon">🔤</div>
+              <h3 class="feature-title">Traductions disponibles</h3>
+              <p class="feature-description">SCEFRA (Settings FR), SCEFRA (Settings EN) et Circuspes</p>
+            </div>
+            <div class="feature-card slide-in-right" tabindex="0" aria-label="Import des bindings">
+              <div class="feature-icon">⌨️</div>
+              <h3 class="feature-title">Import des bindings</h3>
+              <p class="feature-description">Importez vos configurations de touches rapidement et facilement</p>
+            </div>
+            <div class="feature-card slide-in-right" tabindex="0" aria-label="Sauvegarde des personnages">
+              <div class="feature-icon">💾</div>
+              <h3 class="feature-title">Sauvegarde des personnages</h3>
+              <p class="feature-description">Créez des sauvegardes de vos personnages pour ne jamais perdre vos progrès</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="installation" class="installation">
+        <div class="container">
+          <h2 class="section-title">Comment installer</h2>
+          <div class="installation-steps">
+            <div class="step fade-in">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h3 class="step-title">Téléchargement</h3>
+                <p class="step-description">Rendez-vous sur la page <a href="https://github.com/drrakendu78/TradSC/releases" target="_blank">Releases du projet</a> et téléchargez le fichier .msi le plus récent.</p>
+                <p class="step-description" style="margin-bottom: 0.5em;">Ou cliquez ici pour le lien direct :</p>
+                <a id="download-msi-install" class="btn btn-success btn-thin btn-xs" style="margin: 10px 0 0 0; background-color: #c57e22; border: none; display: inline-flex; align-items: center;" href="#" disabled>
+                  <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" style="margin-right:6px;"><path fill="white" d="M5 20h14a1 1 0 0 0 0-2H5a1 1 0 0 0 0 2zm7-3a1 1 0 0 0 1-1v-5.59l1.3 1.3a1 1 0 1 0 1.4-1.42l-3-3a1 1 0 0 0-1.4 0l-3 3a1 1 0 1 0 1.4 1.42l1.3-1.3V16a1 1 0 0 0 1 1z"/></svg>
+                  Chargement...
+                </a>
+              </div>
+            </div>
+            <div class="step fade-in">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h3 class="step-title">Installation</h3>
+                <p class="step-description">Lancez le fichier .msi téléchargé et suivez les instructions à l'écran pour installer l'application.</p>
+              </div>
+            </div>
+            <div class="step fade-in">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h3 class="step-title">Message de protection Windows</h3>
+                <p class="step-description">Si Windows affiche un message "Windows a protégé votre ordinateur", cliquez sur <strong>Informations complémentaires</strong> puis sur <strong>Exécuter quand même</strong>.</p>
+                <div class="image-container">
+                  <img id="smartscreen-slideshow" src="smartscreen_info.png" alt="Exemple d'avertissement SmartScreen Windows lors de l'installation" class="step-image">
+                </div>
+              </div>
+            </div>
+            <div class="step fade-in">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h3 class="step-title">Prêt à l'emploi</h3>
+                <p class="step-description">L'application est maintenant installée et prête à être utilisée. Les mises à jour futures seront proposées automatiquement.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contribution" class="contribution">
+        <div class="container">
+          <h2 class="section-title">Contribution</h2>
+          <div class="contribution-content fade-in">
+            <p>Les contributions sont les bienvenues ! Vous pouvez participer au projet en suivant ces étapes :</p>
+            <ol class="contribution-steps">
+              <li>Fork le projet</li>
+              <li>Créez une branche pour votre fonctionnalité</li>
+              <li>Committez vos changements</li>
+              <li>Poussez vers la branche</li>
+              <li>Ouvrez une Pull Request</li>
+            </ol>
+            <div class="github-link">
+              <a href="https://github.com/drrakendu78/TradSC" target="_blank" class="btn btn-github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                Visiter le dépôt GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="support" class="support">
+        <div class="container">
+          <h2 class="section-title">Support</h2>
+          <div class="support-content fade-in">
+            <p>Pour obtenir de l'aide ou signaler un bug, vous pouvez :</p>
+            <div class="support-options">
+              <a href="https://discord.gg/xeczPncUY4" target="_blank" class="support-option">
+                <div class="support-icon discord">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19.54 0c1.356 0 2.46 1.104 2.46 2.472v21.528l-2.58-2.28-1.452-1.344-1.536-1.428.636 2.22h-13.608c-1.356 0-2.46-1.104-2.46-2.472v-16.224c0-1.368 1.104-2.472 2.46-2.472h16.08zm-4.632 15.672c2.652-.084 3.672-1.824 3.672-1.824 0-3.864-1.728-6.996-1.728-6.996-1.728-1.296-3.372-1.26-3.372-1.26l-.168.192c2.04.624 2.988 1.524 2.988 1.524-1.248-.684-2.472-1.02-3.612-1.152-.864-.096-1.692-.072-2.424.024l-.204.024c-.42.036-1.44.192-2.724.756-.444.204-.708.348-.708.348s.996-.948 3.156-1.572l-.12-.144s-1.644-.036-3.372 1.26c0 0-1.728 3.132-1.728 6.996 0 0 1.008 1.74 3.66 1.824 0 0 .444-.54.804-.996-1.524-.456-2.1-1.416-2.1-1.416l.336.204.048.036.047.027.014.006.047.027c.3.168.6.3.876.408.492.192 1.08.384 1.764.516.9.168 1.956.228 3.108.012.564-.096 1.14-.264 1.74-.516.42-.156.888-.384 1.38-.708 0 0-.6.984-2.172 1.428.36.456.792.972.792.972zm-5.58-5.604c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332.012-.732-.54-1.332-1.224-1.332zm4.38 0c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332 0-.732-.54-1.332-1.224-1.332z"/></svg>
+                </div>
+                <p>Rejoignez notre Discord</p>
+              </a>
+              <a href="https://github.com/drrakendu78/TradSC/issues" target="_blank" class="support-option">
+                <div class="support-icon github">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </div>
+                <p>Ouvrir une Issue GitHub</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3>Traduction Française<span class="highlight">Iridian For Prosperity</span></h3>
+            <p>Une application de bureau pour gérer les traductions françaises de Star Citizen.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Liens rapides</h4>
+            <ul>
+              <li><a href="#features">Fonctionnalités</a></li>
+              <li><a href="#installation">Installation</a></li>
+              <li><a href="#contribution">Contribution</a></li>
+              <li><a href="#support">Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-legal">
+            <h4>Informations légales</h4>
+            <ul>
+              <li><a href="#">Licence MIT</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 L'équipe Iridian For Prosperity. Tous droits réservés.</p>
+          <p>Star Citizen est une marque déposée de Cloud Imperium Rights LLC.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const images = [
+        "Capture-ecran-2025-05-11-170607.png",
+        "capture-ecran-2025-05-11-171534.png",
+        "Capture-ecran-2025-05-11-222124.png",
+        "Capture-ecran-2025-05-11-222132.png",
+        "Capture-ecran-2025-05-11-222138.png",
+        "Capture-ecran-2025-05-11-222151.png",
+        "Capture-ecran-2025-05-11-222158.png",
+        "Capture-ecran-2025-05-14-044458.png",
+        "Capture-ecran-2025-05-14-152224.png"
+      ];
+      let current = 0;
+      setInterval(() => {
+        current = (current + 1) % images.length;
+        document.getElementById('hero-slideshow').src = images[current];
+      }, 3500);
+    </script>
+    <script>
+      const smartscreenImages = [
+        "smartscreen_info.png",
+        "smartscreen_run.png"
+      ];
+      let smartscreenCurrent = 0;
+      setInterval(() => {
+        smartscreenCurrent = (smartscreenCurrent + 1) % smartscreenImages.length;
+        document.getElementById('smartscreen-slideshow').src = smartscreenImages[smartscreenCurrent];
+      }, 3500);
+    </script>
+    <script>
+    fetch('https://api.github.com/repos/drrakendu78/TradSC/releases/latest')
+      .then(response => response.json())
+      .then(data => {
+        const asset = data.assets.find(a => a.name.endsWith('_x64_fr-FR.msi'));
+        const btn1 = document.getElementById('download-msi');
+        const btn2 = document.getElementById('download-msi-install');
+        if (asset) {
+          if (btn1) {
+            btn1.href = asset.browser_download_url;
+            btn1.setAttribute('download', asset.name);
+          }
+          if (btn2) {
+            btn2.href = asset.browser_download_url;
+            btn2.setAttribute('download', asset.name);
+            btn2.removeAttribute('disabled');
+            btn2.innerHTML = `<svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" style="margin-right:6px;"><path fill="white" d="M5 20h14a1 1 0 0 0 0-2H5a1 1 0 0 0 0 2zm7-3a1 1 0 0 0 1-1v-5.59l1.3 1.3a1 1 0 1 0 1.4-1.42l-3-3a1 1 0 0 0-1.4 0l-3 3a1 1 0 1 0 1.4 1.42l1.3-1.3V16a1 1 0 0 0 1 1z"/></svg>Télécharger la dernière version (.msi)`;
+          }
+        } else {
+          if (btn1) {
+            btn1.textContent = "Fichier .msi non trouvé";
+            btn1.classList.remove('btn-success');
+            btn1.style.backgroundColor = '#ccc';
+          }
+          if (btn2) {
+            btn2.textContent = "Fichier .msi non trouvé";
+            btn2.classList.remove('btn-success');
+            btn2.style.backgroundColor = '#ccc';
+            btn2.setAttribute('disabled', 'disabled');
+          }
+        }
+      });
+    </script>
+    <script>
+      document.getElementById('download-msi-install').addEventListener('click', function(e) {
+        if (this.hasAttribute('disabled')) {
+          e.preventDefault();
+        }
+      });
+    </script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
