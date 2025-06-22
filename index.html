@@ -14,36 +14,40 @@
     <script src="js/theme.js" defer></script>
     <script src="js/animations.js"></script>
     <link rel="stylesheet" crossorigin href="/TradSC-docs/assets/index-sT12VTn2.css">
+    <script type="module" crossorigin src="/TradSC-docs/assets/index-DZ_M1s00.js"></script>
+    <link rel="stylesheet" crossorigin href="/TradSC-docs/assets/index-B3iCLriU.css">
   </head>
   <body class="light-theme">
-    <div id="app">
-      <header class="header">
-        <div class="container">
-          <nav class="nav">
-            <div class="logo">
-              <img src="icon.png" alt="Logo" class="logo-img">
-              <h1 class="logo-text">StarTrad FR<span class="highlight">Traduction Française de SC</span></h1>
-            </div>
-            <div class="nav-links">
-              <a href="#features" class="nav-link">Fonctionnalités</a>
-              <a href="#installation" class="nav-link">Installation</a>
-              <a href="#contribution" class="nav-link">Contribution</a>
-              <a href="#support" class="nav-link">Support</a>
-              <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"/></svg>
-                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 7a7 7 0 0 0 12 4.9v.1c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2h.1A6.979 6.979 0 0 0 10 7zm-6 5a8 8 0 0 0 15.062 3.762A9 9 0 0 1 8.238 4.938 7.999 7.999 0 0 0 4 12z"/></svg>
-              </button>
-            </div>
-          </nav>
+    <header class="header sticky">
+      <div class="container nav-flex">
+        <div class="logo">
+          <img src="icon.png" alt="Logo StarTrad FR, application de traduction française pour Star Citizen" class="logo-img">
+          <span class="logo-text">StarTrad FR <span class="highlight">Traduction Française de SC</span></span>
         </div>
-      </header>
-
+        <nav class="nav" role="navigation" aria-label="Navigation principale">
+          <a href="#features" class="nav-link" aria-current="page">Fonctionnalités</a>
+          <a href="#installation" class="nav-link">Installation</a>
+          <a href="#contribution" class="nav-link">Contribution</a>
+          <a href="#support" class="nav-link">Support</a>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Changer le thème clair/sombre">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 7a7 7 0 0 0 12 4.9v.1c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2h.1A6.979 6.979 0 0 0 10 7zm-6 5a8 8 0 0 0 15.062 3.762A9 9 0 0 1 8.238 4.938 7.999 7.999 0 0 0 4 12z"/></svg>
+        </button>
+      </div>
+    </header>
+    <main>
       <section class="hero">
-        <div class="container">
-          <div class="hero-content">
-            <h2 class="hero-title fade-in">Une application de bureau pour gérer les traductions françaises de Star Citizen</h2>
-            <p class="hero-description fade-in">Construite avec Tauri et React, notre application vous permet de gérer facilement les traductions françaises pour une expérience de jeu immersive.</p>
-            <div class="hero-buttons fade-in">
+        <div class="container hero-flex-col">
+          <div class="hero-image-avant">
+            <div class="hero-slideshow-mockup fade-in">
+              <img id="hero-slideshow" src="Capture-ecran-2025-05-11-170607.png" alt="Capture d'écran de l'application StarTrad FR en fonctionnement" class="screenshot">
+            </div>
+          </div>
+          <div class="hero-content-glass fade-in">
+            <h1 class="hero-title">Une application de bureau pour gérer les traductions françaises de Star Citizen</h1>
+            <p class="hero-description">Construite avec Tauri et React, notre application vous permet de gérer facilement les traductions françaises pour une expérience de jeu immersive.</p>
+            <div class="hero-buttons">
               <a id="download-msi" class="btn btn-success btn-thin" style="margin-right: 0.5em; background-color: #c58422; border: none;">
                 <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" style="margin-right:10px;"><path fill="white" d="M5 20h14a1 1 0 0 0 0-2H5a1 1 0 0 0 0 2zm7-3a1 1 0 0 0 1-1v-5.59l1.3 1.3a1 1 0 1 0 1.4-1.42l-3-3a1 1 0 0 0-1.4 0l-3 3a1 1 0 1 0 1.4 1.42l1.3-1.3V16a1 1 0 0 0 1 1z"/></svg>
                 Télécharger la dernière version (.msi)
@@ -55,9 +59,6 @@
               <a href="#features" class="btn btn-secondary btn-thin">Découvrir les fonctionnalités</a>
             </div>
           </div>
-          <div class="hero-image fade-in">
-            <img id="hero-slideshow" src="Capture-ecran-2025-05-11-170607.png" alt="Capture d'écran application" class="screenshot">
-          </div>
         </div>
       </section>
 
@@ -65,42 +66,42 @@
         <div class="container">
           <h2 class="section-title">Fonctionnalités</h2>
           <div class="features-grid">
-            <div class="feature-card slide-in-right">
+            <div class="feature-card slide-in-right" tabindex="0" aria-label="Gestion des traductions">
               <div class="feature-icon">🌍</div>
               <h3 class="feature-title">Gestion des traductions</h3>
               <p class="feature-description">Gérez facilement les traductions françaises pour Star Citizen</p>
             </div>
-            <div class="feature-card slide-in-right">
+            <div class="feature-card slide-in-right" tabindex="0" aria-label="Nettoyage du cache">
               <div class="feature-icon">🧹</div>
               <h3 class="feature-title">Nettoyage du cache</h3>
               <p class="feature-description">Nettoyez le cache du jeu en un clic pour une expérience optimale</p>
             </div>
-            <div class="feature-card slide-in-right">
+            <div class="feature-card slide-in-right" tabindex="0" aria-label="Interface personnalisable">
               <div class="feature-icon">🎨</div>
               <h3 class="feature-title">Interface personnalisable</h3>
               <p class="feature-description">Interface utilisateur moderne et entièrement personnalisable</p>
             </div>
-            <div class="feature-card slide-in-right">
+            <div class="feature-card slide-in-right" tabindex="0" aria-label="Mode sombre/clair">
               <div class="feature-icon">🌓</div>
               <h3 class="feature-title">Mode sombre/clair</h3>
               <p class="feature-description">Choisissez entre le mode sombre ou clair selon votre préférence</p>
             </div>
-            <div class="feature-card slide-in-right">
+            <div class="feature-card slide-in-right" tabindex="0" aria-label="Flux RSS d'actualités">
               <div class="feature-icon">📰</div>
               <h3 class="feature-title">Flux RSS d'actualités</h3>
               <p class="feature-description">Restez informé avec le flux d'actualités intégré</p>
             </div>
-            <div class="feature-card slide-in-right">
+            <div class="feature-card slide-in-right" tabindex="0" aria-label="Traductions disponibles">
               <div class="feature-icon">🔤</div>
               <h3 class="feature-title">Traductions disponibles</h3>
               <p class="feature-description">SCEFRA (Settings FR), SCEFRA (Settings EN) et Circuspes</p>
             </div>
-            <div class="feature-card slide-in-right">
+            <div class="feature-card slide-in-right" tabindex="0" aria-label="Import des bindings">
               <div class="feature-icon">⌨️</div>
               <h3 class="feature-title">Import des bindings</h3>
               <p class="feature-description">Importez vos configurations de touches rapidement et facilement</p>
             </div>
-            <div class="feature-card slide-in-right">
+            <div class="feature-card slide-in-right" tabindex="0" aria-label="Sauvegarde des personnages">
               <div class="feature-icon">💾</div>
               <h3 class="feature-title">Sauvegarde des personnages</h3>
               <p class="feature-description">Créez des sauvegardes de vos personnages pour ne jamais perdre vos progrès</p>
@@ -138,7 +139,7 @@
                 <h3 class="step-title">Message de protection Windows</h3>
                 <p class="step-description">Si Windows affiche un message "Windows a protégé votre ordinateur", cliquez sur <strong>Informations complémentaires</strong> puis sur <strong>Exécuter quand même</strong>.</p>
                 <div class="image-container">
-                  <img id="smartscreen-slideshow" src="smartscreen_info.png" alt="SmartScreen Exemple" class="step-image">
+                  <img id="smartscreen-slideshow" src="smartscreen_info.png" alt="Exemple d'avertissement SmartScreen Windows lors de l'installation" class="step-image">
                 </div>
               </div>
             </div>
@@ -197,38 +198,38 @@
           </div>
         </div>
       </section>
+    </main>
 
-      <footer class="footer">
-        <div class="container">
-          <div class="footer-content">
-            <div class="footer-info">
-              <h3>Traduction Française<span class="highlight">Iridian For Prosperity</span></h3>
-              <p>Une application de bureau pour gérer les traductions françaises de Star Citizen.</p>
-            </div>
-            <div class="footer-links">
-              <h4>Liens rapides</h4>
-              <ul>
-                <li><a href="#features">Fonctionnalités</a></li>
-                <li><a href="#installation">Installation</a></li>
-                <li><a href="#contribution">Contribution</a></li>
-                <li><a href="#support">Support</a></li>
-              </ul>
-            </div>
-            <div class="footer-legal">
-              <h4>Informations légales</h4>
-              <ul>
-                <li><a href="#">Licence MIT</a></li>
-                <li><a href="#">Politique de confidentialité</a></li>
-              </ul>
-            </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3>Traduction Française<span class="highlight">Iridian For Prosperity</span></h3>
+            <p>Une application de bureau pour gérer les traductions françaises de Star Citizen.</p>
           </div>
-          <div class="footer-bottom">
-            <p>&copy; 2025 L'équipe Iridian For Prosperity. Tous droits réservés.</p>
-            <p>Star Citizen est une marque déposée de Cloud Imperium Rights LLC.</p>
+          <div class="footer-links">
+            <h4>Liens rapides</h4>
+            <ul>
+              <li><a href="#features">Fonctionnalités</a></li>
+              <li><a href="#installation">Installation</a></li>
+              <li><a href="#contribution">Contribution</a></li>
+              <li><a href="#support">Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-legal">
+            <h4>Informations légales</h4>
+            <ul>
+              <li><a href="#">Licence MIT</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
+            </ul>
           </div>
         </div>
-      </footer>
-    </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 L'équipe Iridian For Prosperity. Tous droits réservés.</p>
+          <p>Star Citizen est une marque déposée de Cloud Imperium Rights LLC.</p>
+        </div>
+      </div>
+    </footer>
     <script>
       const images = [
         "Capture-ecran-2025-05-11-170607.png",
